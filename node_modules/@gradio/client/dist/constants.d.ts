@@ -1,0 +1,23 @@
+export declare const HOST_URL = "host";
+export declare const API_URL = "api/predict/";
+export declare const SSE_URL_V0 = "queue/join";
+export declare const SSE_DATA_URL_V0 = "queue/data";
+export declare const SSE_URL = "queue/data";
+export declare const SSE_DATA_URL = "queue/join";
+export declare const UPLOAD_URL = "upload";
+export declare const LOGIN_URL = "login";
+export declare const CONFIG_URL = "config";
+export declare const API_INFO_URL = "info";
+export declare const RUNTIME_URL = "runtime";
+export declare const SLEEPTIME_URL = "sleeptime";
+export declare const RAW_API_INFO_URL = "info?serialize=False";
+export declare const SPACE_FETCHER_URL = "https://gradio-space-api-fetcher-v2.hf.space/api";
+export declare const RESET_URL = "reset";
+export declare const SPACE_URL = "https://hf.space/{}";
+export declare const QUEUE_FULL_MSG = "This application is currently busy. Please try again. ";
+export declare const BROKEN_CONNECTION_MSG = "Connection errored out. ";
+export declare const CONFIG_ERROR_MSG = "Could not resolve app config. ";
+export declare const SPACE_STATUS_ERROR_MSG = "Could not get space status. ";
+export declare const API_INFO_ERROR_MSG = "Could not get API info. ";
+export declare const SPACE_METADATA_ERROR_MSG = "Space metadata could not be loaded. ";
+//# sourceMappingURL=constants.d.ts.map
