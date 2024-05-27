@@ -8,10 +8,18 @@ const PORT = process.env.PORT || 3000;
 app.get('/api', async (req, res) => {
   try {
     const appClient = await client("https://facebook-musicgen.hf.space/");
-    const result = await appClient.predict(0, [
-      "Howdy!", // string in 'Describe your music' Textbox component
-      null, // blob in 'File' Audio component
-    ]);
+    // const result = await appClient.predict(0, [
+    //   "Howdy!", // string in 'Describe your music' Textbox component
+    //   null, // blob in 'File' Audio component
+    // ]);
+
+    // return a dummy response
+    const result = {
+      data: {
+        "music": "https://gradio.app/musicgen/1.mp3",
+        "lyrics": "I'm a little teapot, short and stout, here is my handle, here is my spout"
+      }
+    }
 
     res.json(result?.data);
   } catch (error) {
